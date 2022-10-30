@@ -21,6 +21,7 @@ RUN apt update && \
         net-tools netcat \
         wmctrl xdotool \
         mesa-utils libgl1-mesa-dri \
+	openssh-client \
     && \
     touch /root/.Xdefaults && \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \

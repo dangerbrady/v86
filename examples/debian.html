@@ -9,12 +9,13 @@ window.onload = function()
 {
     var emulator = new V86Starter({
         wasm_path: "../build/v86.wasm",
-        memory_size: 512 * 1024 * 1024,
+        memory_size: 512 * 1024 * 1024, //<!-- was 512-->
         vga_memory_size: 8 * 1024 * 1024,
         screen_container: document.getElementById("screen_container"),
-        initial_state: { url: "../images/debian-state-base.bin" },
+        initial_state: { url: "../images/debian-state-base.bin.zst" },
         filesystem: { baseurl: "../images/debian-9p-rootfs-flat/" },
         autostart: true,
+	network_relay_url: "ws://192.168.88.156:8080/",
     });
 };
 </script>

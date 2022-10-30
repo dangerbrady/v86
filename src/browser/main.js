@@ -1295,7 +1295,7 @@
 
             "boot_order": settings.boot_order || parseInt($("boot_order").value, 16) || 0,
 
-            "network_relay_url": ON_LOCALHOST ? "ws://localhost:8080/" : networking_proxy,
+            "network_relay_url": ON_LOCALHOST ? "ws://192.168.88.156:8080/" : networking_proxy,
 
             "bios": bios,
             "vga_bios": vga_bios,
